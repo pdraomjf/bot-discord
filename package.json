@@ -1,9 +1,32 @@
 {
+  "name": "bot-discord",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "node src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pdraomjf/bot-discord.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/pdraomjf/bot-discord/issues"
+  },
+  "homepage": "https://github.com/pdraomjf/bot-discord#readme",
   "dependencies": {
+    "@discord-player/extractor": "^7.1.0",
+    "@discordjs/opus": "^0.10.0",
     "@discordjs/voice": "^0.18.0",
+    "@distube/ytdl-core": "^4.16.12",
+    "discord-player": "^7.1.0",
     "discord.js": "^14.21.0",
     "dotenv": "^17.2.1",
-    "play-dl": "^1.9.7",
-    "ytdl-core": "^4.11.5"
+    "mediaplex": "^1.0.0"
   }
 }

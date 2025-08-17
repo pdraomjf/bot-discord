@@ -41,6 +41,9 @@ function setupEventHandlers(client) {
       else if (message.content === "!stop") {
         handleStopCommand(message, serverQueue);
       }
+      else if (message.content === "!help") {
+        handleHelpCommand(message);
+      }
     } catch (error) {
       console.error("Erro ao processar comando:", error);
       message.reply("❌ Ocorreu um erro ao processar seu comando.");
@@ -163,6 +166,10 @@ function handleStopCommand(message, serverQueue) {
   } catch (_) {}
   client.queues.delete(message.guild.id);
   message.reply("⏹ Música parada e saindo do canal.");
+}
+
+function handleHelpCommand(message) {
+  message.reply("Comandos básicos do BOT:\n!play  !queue  !skip  !remove [Nº Fila]  !np  !volume [0 - 100]  !pause  !resume  !stop")
 }
 
 module.exports = {
